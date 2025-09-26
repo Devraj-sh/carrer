@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI & I: THE DILEMMA - Design System
+   Futuristic AI vs Human theme with teal/orange gradients
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 37 11% 96%;
+    --foreground: 195 78% 15%;
+    
+    --card: 37 11% 98%;
+    --card-foreground: 195 78% 15%;
+    
+    --popover: 37 11% 98%;
+    --popover-foreground: 195 78% 15%;
+    
+    /* AI vs Human theme colors */
+    --primary: 180 73% 34%;
+    --primary-foreground: 37 11% 96%;
+    --primary-glow: 180 73% 45%;
+    
+    --secondary: 24 56% 67%;
+    --secondary-foreground: 37 11% 96%;
+    --secondary-glow: 24 56% 77%;
+    
+    --muted: 37 11% 94%;
+    --muted-foreground: 195 20% 43%;
+    
+    --accent: 195 78% 15%;
+    --accent-foreground: 37 11% 96%;
+    
+    --destructive: 355 78% 60%;
+    --destructive-foreground: 37 11% 96%;
+    
+    --border: 24 33% 80%;
+    --input: 37 11% 94%;
+    --ring: 180 73% 34%;
+    
+    --radius: 0.75rem;
+    
+    /* AI vs Human specific colors */
+    --ai-primary: 180 73% 34%;
+    --ai-secondary: 186 73% 63%;
+    --ai-glow: 180 73% 45%;
+    
+    --human-primary: 24 56% 67%;
+    --human-secondary: 21 85% 77%;
+    --human-glow: 24 56% 77%;
+    
+    /* Gradient tokens */
+    --gradient-ai: linear-gradient(135deg, hsl(180 73% 34%), hsl(186 73% 63%));
+    --gradient-human: linear-gradient(135deg, hsl(24 56% 67%), hsl(21 85% 77%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 73% 34%), hsl(24 56% 67%));
+    --gradient-card: linear-gradient(145deg, hsl(37 11% 98%), hsl(37 11% 96%));
+    
+    /* Shadow tokens */
+    --shadow-ai: 0 10px 30px -10px hsl(180 73% 34% / 0.3);
+    --shadow-human: 0 10px 30px -10px hsl(24 56% 67% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(195 78% 15% / 0.1);
+    --shadow-glow: 0 0 40px hsl(180 73% 45% / 0.4);
+    
+    /* Animation tokens */
+  }
+
+  .dark {
+    --background: 195 78% 15%;
+    --foreground: 37 11% 96%;
+    
+    --card: 195 78% 12%;
+    --card-foreground: 37 11% 96%;
+    
+    --popover: 195 78% 12%;
+    --popover-foreground: 37 11% 96%;
+    
+    --primary: 180 73% 45%;
+    --primary-foreground: 195 78% 15%;
+    --primary-glow: 180 73% 55%;
+    
+    --secondary: 24 56% 77%;
+    --secondary-foreground: 195 78% 15%;
+    --secondary-glow: 24 56% 87%;
+    
+    --muted: 195 78% 10%;
+    --muted-foreground: 195 20% 63%;
+    
+    --accent: 180 73% 45%;
+    --accent-foreground: 37 11% 96%;
+    
+    --destructive: 355 78% 60%;
+    --destructive-foreground: 37 11% 96%;
+    
+    --border: 195 20% 25%;
+    --input: 195 78% 10%;
+    --ring: 180 73% 45%;
+    
+    --ai-primary: 180 73% 45%;
+    --ai-secondary: 186 73% 73%;
+    --ai-glow: 180 73% 55%;
+    
+    --human-primary: 24 56% 77%;
+    --human-secondary: 21 85% 87%;
+    --human-glow: 24 56% 87%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
